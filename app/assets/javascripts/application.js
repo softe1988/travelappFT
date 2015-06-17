@@ -19,8 +19,9 @@ $(document).ready(function (){
 
     function initialize() {
       var mapOptions = {
-      center: { lat: -34.397, lng: 150.644},
-      zoom: 8
+      center: { lat: -36.848738, lng: 174.752173},
+      zoom: 15,
+      scrollwheel: false
       };
         
       var map = new google.maps.Map(document.getElementById('map-canvas'),
