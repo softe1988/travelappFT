@@ -35,6 +35,17 @@ $(document).ready(function (){
       map: map,
       icon: image
         });
+        var contentString = '<h2>Dallas</h2>' +
+   '<p>This is the coolest place on earth, you guys.</p>'
+ ;
+
+   var infowindow = new google.maps.InfoWindow({
+     content: contentString
+   });
+  
+   google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+   });
 
     }
 
